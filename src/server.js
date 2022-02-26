@@ -20,7 +20,7 @@ function correctSecretProvided(req) {
   const requiredSecret = process.env.ACTION_SECRET_ENV;
   const providedSecret = req.headers["action_secret"];
 
-  console.log({requiredSecret, providedSecret});
+  console.log(req.headers);
   return requiredSecret === providedSecret;
 }
 
