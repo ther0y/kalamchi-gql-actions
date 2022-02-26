@@ -1,0 +1,13 @@
+version: "3.6"
+services:
+  kalamchi-actions-server:
+    build: .
+    restart: always
+    volumes:
+      - .:/app
+    ports:
+      - "3000:3000"
+    environment:
+      GQL_ENDPOINT: http://localhost:8080/v1/graphql
+      HASURA_GRAPHQL_ADMIN_SECRET: myadminsecretkey
+      ACTION_SECRET_ENV: "0:}LHBs@;m[VNWsplTp[9,EpszKWfI"

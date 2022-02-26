@@ -1,0 +1,25 @@
+{
+  "name": "kalamchi-gql-actions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "nodemon -r esm src/server.js",
+    "dev:local": "nodemon -r esm -r dotenv/config src/server.js dotenv_config_path=.env.local",
+    "dev:prod": "nodemon -r esm -r dotenv/config src/server.js dotenv_config_path=.env.prod"
+  },
+  "dependencies": {
+    "body-parser": "1.19.0",
+    "crypto-es": "^1.2.7",
+    "crypto-js": "^4.1.1",
+    "dotenv": "^16.0.0",
+    "express": "4.16.4",
+    "node-fetch": "2.6.0",
+    "uuid4": "^2.0.2"
+  },
+  "devDependencies": {
+    "esm": "^3.2.25",
+    "nodemon": "1.18.4"
+  },
+  "keywords": []
+}
