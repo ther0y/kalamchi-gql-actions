@@ -1,7 +1,6 @@
 var express = require("express");
 var router = express.Router();
 const fetch = require("node-fetch");
-const hasher = require("../utils/hasher.js");
 const GQL_ENDPOINT =
   process.env.GQL_ENDPOINT || "http://localhost:8080/v1/graphql";
 
