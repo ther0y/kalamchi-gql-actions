@@ -18,7 +18,7 @@ function authorizationMiddleware(req, res, next) {
 // check if the secret sent in the header equals to the secret stored as an env variable
 function correctSecretProvided(req) {
   const requiredSecret = process.env.ACTION_SECRET_ENV;
-  const providedSecret = req.headers["action_secret"];
+  const providedSecret = req.headers["action-secret"];
 
   console.log(req.headers);
   return requiredSecret === providedSecret;
